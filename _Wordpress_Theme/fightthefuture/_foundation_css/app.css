@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+.parsed_links
+{
+font-size:10pt;
+color:#6B6B6B;
+}
+
+.chirp_time_user
+{
+margin-top:0em;
+margin-bottom:-1.5em;
+font-size:10pt;
+color:#777;
+}
+.page_text p
+{
+font-size:10pt;
+}
+
+.top-bar
+{ 
+height: 40px;
+background-color:#EEE;
+margin-left: 0.5em; 
+margin-top: 0em;
+padding: 0; 
+}
+
+.top-bar-mobile
+{ 
+height: 40px;
+background-color:#111;
+color:white;
+margin-left: 0em; 
+margin-bottom:1.5em;
+}
+
+.top-bar ul > li a:not(.button) 
+{ 
+font-family: "SourceSansProRegular", Arial;
+letter-spacing: -75%;	
+font-size:11pt;
+color: black;
+display: block; 
+height: 45px; 
+line-height: 45px; 
+padding: 0 15px; 
+}
+
+.top-bar-mobile ul > li a:not(.button) 
+{ 
+font-family: "SourceSansProRegular", Arial;
+letter-spacing: -75%;	
+font-size:11pt;
+color: white;
+display: block; 
+height: 45px; 
+line-height: 45px; 
+padding: 0 15px; 
+}
+
+.tweet
+{
+font-size:10pt;
+color:#333;
+word-wrap: break-word;
+}
+
+body
+{
+background-color:#222;
+color:white;
+background-image: url("/wp-content/themes/fightthefuture/_images/bg_00.png");
+}
+
+table
+{
+width:100%;
+border-color:#CCC;	
+padding:0.25em;
+
+}
+
+table, td, tr 
+{
+background-color:#F6F6F6;
+}
+
+.header_bg
+{
+background: #EEE; 
+color:#333;
+}
+
+.normal_row
+{
+background: #EEE;	
+}
+
+.proper_semibold
+{
+font-family: "SourceSansProSemibold", Arial;
+}
+
+.sidebar_address
+{
+font-family: "SourceSansProRegular", Arial;
+letter-spacing: -75%;	
+line-height:1.3em;
+font-size:11pt;
+
+}
+
+.sidebar_thingy
+{
+font-family: "SourceSansProLight", Arial;
+letter-spacing: -75%;	
+font-size:11pt;
+
+
+}
+
+.from_address
+{
+font-family: "SourceSansProRegular", Arial;
+font-size:13pt;
+color:#F2B91D;	
+}
+
+.subject_text
+{
+}
+
+.caps_header
+{
+font-family: "SourceSansProSemibold", Arial;
+font-size:13pt;
+letter-spacing: -75%;
+text-transform: uppercase;
+color:#222;
+}
+
+/*Mark ANON CHANGE 00*/
+h1, h2, h3, h4, h5, h6
+{
+font-family: "SourceSansProRegular", Arial;
+font-size:12pt;
+letter-spacing: -0.02em;	
+line-height:1.3em;
+color:#222;
+}
+p, a, div 
+{
+font-family: "SourceSansProRegular", Arial;
+font-size:11pt;
+letter-spacing: -0.02em;	
+line-height:1.3em;
+}
+/*MARK MIZU CHANGE 01*/
+.accordion h3
+{
+font-size:13pt;
+font-weight:normal;	
+}
+
+a
+{
+font-size:10pt;
+color:#0F155C;
+}
+a:hover
+{
+color:#446CB8;	
+}
+.hashtag_link
+{
+color:#192182;
+}
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
