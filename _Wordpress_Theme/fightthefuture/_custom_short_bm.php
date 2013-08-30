@@ -26,7 +26,7 @@ get_header();
   			You can copy the Bitmessage Address here:<br>
   			<?php
   			$the_address = mysql_real_escape_string(stripslashes($_GET['a']));
-  			$the_address = substr($the_address,0,30);
+  			$the_address = substr($the_address,0,50);
         if ($the_address == "addresses")
           {
           $the_address = "(The Bitmessage Address)"; 

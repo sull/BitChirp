@@ -5,7 +5,7 @@
 //Licensed under GNU GPL V3
 
 //Document Header
-get_header(); 
+//get_header(); 
 
 //NEEDS TO GO SOMEWHERE BETTER
 function alterBrightness($color, $amount) 

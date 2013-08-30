@@ -3,9 +3,8 @@
 ?>
 
 
-<nav class="top-bar hide-for-small" style="margin-top:7em;">
+<nav class="top-bar hide-for-medium-down" style="margin-top:7em;">
         <ul class="title-area">
-          <li class="name show-for-small">MOBILE VIEW MENU (TAP HERE)</li>
           <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
         </ul>
         <ul class="right">
@@ -19,9 +18,9 @@
         </ul>
 </nav>
 
-<nav class="top-bar top-bar-mobile show-for-small" style="">
+<nav class="top-bar top-bar-mobile show-for-medium-down" style="margin-top:7em;">
         <ul class="title-area">
-          <li class="name show-for-small" style="font-size:15pt;font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp; MENU</li>
+          <li class="name" style="font-size:15pt;font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp; MENU</li>
           <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
         </ul>
         <ul class="right">

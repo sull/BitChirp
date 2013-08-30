@@ -70,7 +70,7 @@ function alterBrightness($color, $amount)
 	</div>
 	
 	<div class="three columns show-for-small" style="text-align:center;">
-		<br><a href="/"><img style="max-width:100%; margin-left:-0.5em;margin-top:1em;margin-bottom:1.5em;" src="/wp-content/themes/fightthefuture/_images/logo_00_mobile.png"></a>
+		<br><a href="/"><img style="max-width:100%; margin-left:-0.5em;margin-top:1em;margin-bottom:-6em;" src="/wp-content/themes/fightthefuture/_images/logo_00_mobile.png"></a>
 	</div>
 
 	<div class="seven columns" >

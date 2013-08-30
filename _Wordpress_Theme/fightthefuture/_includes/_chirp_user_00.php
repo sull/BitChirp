@@ -24,12 +24,21 @@ mysql_select_db($database) or die( "Unable to select database");
 //echo $_POST["action"];
 //RESET
 
-$query = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet FROM core_00 WHERE from_address = '".$the_user."' ORDER BY time DESC";
+$query1 = "SELECT username from users where address = '".$the_user."'";
+$query2 = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet, username FROM core_00 LEFT JOIN users ON core_00.from_address = users.address WHERE from_address = '".$the_user."' ORDER BY time DESC";
+
 //echo "query is".$query;
 
 //echo '<font size="5"><b>"BitTweet"</b></font><br>';
 
-$results = mysql_query($query);
+$results1     = mysql_query($query1);
+$results2     = mysql_query($query2);
+
+//The Usernames (if it exists)
+if (mysql_num_rows($results1) > 0)
+{
+$theusername = mysql_result($results1,0,'username');
+}
 
 // Test Address
         // 424d2d324441723173535a594d47594c5a625834796f70796551746e6e75586b4a79553677
@@ -78,13 +87,18 @@ $results = mysql_query($query);
 
         if ($the_user_trimmed == "BM-2D85ZkbLckdMRoh3pknCrvS7av66dtWadF")
             {
-            $the_user_trimmed_desktop = '<span style="font-size:17pt;">BitChirp.org</span><br>BM-2D85ZkbLckdMRoh3pknCrvS7av66dtWadF';
-            $the_user_trimmed_mobile = 'BitChirp.org';
+            $the_user_trimmed_desktop = '<span style="font-size:17pt;">(╥﹏╥)</span><br>BM-2D85ZkbLckdMRoh3pknCrvS7av66dtWadF';
+            $the_user_trimmed_mobile = '(╥﹏╥)';
             }
         else if ($the_user_trimmed == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
             {
-            $the_user_trimmed_desktop = '<span style="font-size:17pt;">BitChirp(Chan)</span><br>BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi';
-            $the_user_trimmed_mobile = 'BitChirp(Chan)';
+            $the_user_trimmed_desktop = '<span style="font-size:17pt;">(⊙.⊙(☉_☉)⊙.⊙)</span><br>BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi';
+            $the_user_trimmed_mobile = '(⊙.⊙(☉_☉)⊙.⊙)';
+            }
+        else if ($theusername != "")
+            {
+            $the_user_trimmed_desktop = '<span style="font-size:17pt;">'.$theusername.'</span><br>'.$the_user_trimmed;
+            $the_user_trimmed_mobile = $theusername;
             }
         else
             {
@@ -125,7 +139,7 @@ $results = mysql_query($query);
     </tr>
     </table>';
 
-    while($row = mysql_fetch_assoc($results))
+    while($row = mysql_fetch_assoc($results2))
 
     {
         
@@ -208,7 +222,7 @@ $results = mysql_query($query);
         $tweet = htmlentities($tweet,ENT_QUOTES,'UTF-8');
 
         //parse Bitmessage addresses
-        $tweet = preg_replace('/(^|\s)BM-([a-zA-Z0-9]+\w*)/', '\1<a class="parsed_links" target="_blank" href="/bm/?a=\2">BM-(click to show)</a>', $tweet);
+        $tweet = preg_replace('/(^|\s)BM-([a-zA-Z0-9]+\w*)/', '\1<a class="parsed_links" target="_blank" href="/bm/?a=BM-\2">BM-(click to show)</a>', $tweet);
 
         //parse links
         $tweet = preg_replace_callback("#((http|https|ftp)://(\S*?\.\S*?))(\s|\;|\)|\]|\[|\{|\}|,|\"|'|:|\<|$|\.\s)#i",

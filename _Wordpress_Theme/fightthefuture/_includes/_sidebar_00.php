@@ -3,25 +3,50 @@
 //Licensed under GNU GPL V3
 ?>
 
-  		
+<div class="hide-for-small" style="padding-left:1em;padding-right:1em;">
+	<div style="font-family:SourceSansProRegular,Arial;margin-bottom:0.25em;color:#222;">Selected Chan Pic!
+	</div>
+    <div style="margin-bottom:1em;color:#222;"><a href="http://beforeitsnews.com/alternative/2013/08/no-war-with-syria-rallies-happening-this-saturday-august-31-worldwide-2749012.html" target="_blank"><img src="https://bitchirp.org/_pics/syria-wr.jpg" width="80%"></a>
+    </div>
+</div> 
+
+
+<div class="show-for-small">
+	<table>
+		<tr>
+		<td>
+			<div style="font-family:SourceSansProRegular,Arial;margin-bottom:0.5em;color:#222;">Selected Chan Pic!
+			</div>
+    		<div style="margin-bottom:1em;color:#222;"><a href="http://beforeitsnews.com/alternative/2013/08/no-war-with-syria-rallies-happening-this-saturday-august-31-worldwide-2749012.html" target="_blank"><img src="https://bitchirp.org/_pics/syria-wr.jpg" width="100%"></a>
+    		</div>
+    	</td>
+    	</tr>
+    </table>
+</div> 
+
+
 <div class="hide-for-small" style="padding-left:1em;padding-right:1em;">
 
 <!--<table>
 <tr>
 <td>-->
+
+	
+
 	<div style="margin-bottom:0.5em;color:#222;">Suggested Searches
 	</div>
 		
 		<a class="hashtag_link" href="/search-hashtag/?h=%23BitChirp">#BitChirp</a><br>
 		<a class="hashtag_link" href="/search-hashtag/?h=%23Bitmessage">#Bitmessage</a><br>
 		<a class="hashtag_link" href="/search-hashtag/?h=%23FuckTheBanks">#FuckTheBanks</a><br>
+		<a class="hashtag_link" href="/search-hashtag/?h=%23Fukushima">#Fukushima</a><br>
     	<!--<a href="/search-hashtag/?h=%23Egypt">#Egypt</a><br>-->
 		<!--<a href="/search-hashtag/?h=%23Fontas">#Fontas</a><br>-->
 		<a class="hashtag_link" href="/search-hashtag/?h=%23NSA">#NSA</a><br>
 		<!--<a href="/search-hashtag/?h=%23PRISM">#PRISM</a><br>-->
 		<a class="hashtag_link" href="/search-hashtag/?h=%23Snowden">#Snowden</a><br>
-    	<a class="hashtag_link" href="/search-hashtag/?h=%23Tor">#Tor</a><br>
-		<!--<a href="/search-hashtag/?h=%23TorOrVPN">#TorOrVPN</a><br>-->
+		<a class="hashtag_link" href="/search-hashtag/?h=%23Syria">#Syria</a><br>
+    	<!--<a href="/search-hashtag/?h=%23TorOrVPN">#TorOrVPN</a><br>-->
 
 	<br>
 	<div style="margin-bottom:0.5em;color:#222;">Text Or Tag Search
@@ -48,6 +73,8 @@
 
     <!--</td>
       	</tr></table>-->
+
+
 </div>
 
 <div class="show-for-small">

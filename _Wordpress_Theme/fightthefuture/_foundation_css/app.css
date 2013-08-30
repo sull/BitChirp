@@ -115,6 +115,18 @@ background: #EEE;
 .proper_semibold
 {
 font-family: "SourceSansProSemibold", Arial;
+letter-spacing: -75%;	
+line-height:1.3em;
+font-size:11pt;
+}
+
+.proper_strong, strong
+{
+font-family: "SourceSansProSemibold", Arial;
+letter-spacing: -75%;	
+line-height:1.3em;
+font-size:10pt;
+font-weight:500;
 }
 
 .sidebar_address

@@ -48,26 +48,18 @@ mysql_select_db($database) or die( "Unable to select database");
 
 //echo $_POST["action"];
 //RESET
-$query = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet FROM core_00 ORDER BY time DESC LIMIT 0,150";
+$query = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet, username FROM core_00 LEFT JOIN users ON core_00.from_address = users.address ORDER BY time DESC LIMIT 0,150";
 //echo "query is".$query;
 
 //echo '<font size="5"><b>"BitTweet"</b></font><br>';
 
-$results = mysql_query($query);
+$results1 = mysql_query($query);
+//$results2 = mysql_query($query);
+
 
 // Run loop until data exceeds
     
     echo '
-    <table><tr>
-      <td>
-        <span style="color:#222;font-family: SourceSansProSemiBold,Arial;">IMPORTANT CHANGE: BitChirp is switching to the "Chan" system. In Bitmessage, please join the "Chan" called "BitChirp".</span> <a href="/chan">Read More Here</a>. BTW, bitmsg.to/usernames coming in the next few weeks.
-        <!--<span style="color:#222;">
-        Planned Upgrade Aug 05-11: I\'ve got an interesting announcement for usernames and bitmessage address shortening. Stay tuned.
-        </span>-->
-    </td>
-    </tr>
-    </table>
-
     <table><tr>
       <td>
         <!--<span class="caps_header">WHAT IS BITCHIRP?</span><br>-->
@@ -82,13 +74,21 @@ $results = mysql_query($query);
         </span>
       </td>
     </tr></table>
+    
+    <table><tr>
+      <td>
+        <span style="color:#222;font-family: SourceSansProSemiBold,Arial;">BitChirp.org &amp; Bitmsg.To Usernames:</span>
+        <span style="color:#222;">Registration now open! Send a BM from the BM address you want to register to: BM-GtqFCjuk7jgCtwrafg7BmddrYDw1cw7b. Include clearly your 1st, 2nd and 3rd preferences for a username. Do NOT send username requests to the BitChirp chan/old address!</span>
+      </td>
+    </tr></table>
+
     ';
 
     echo '
     ';
 
 
-    while($row = mysql_fetch_assoc($results))
+    while($row = mysql_fetch_assoc($results1))
 
     {
         
@@ -158,6 +158,7 @@ $results = mysql_query($query);
             $to_tag = '<a href="/chan" class="tiny button secondary round disabled">OLD</a>';
             }
 
+
         echo '<table><tr>';
        // echo htmlentities($time);
         echo '<td><div style="margin-top:0em;margin-bottom:-0.5em;">'.$colors.'</div></td>'; 
@@ -173,9 +174,11 @@ $results = mysql_query($query);
         //From Address
         $from_userdetect = $from;
         if ($from_userdetect == "BM-2D85ZkbLckdMRoh3pknCrvS7av66dtWadF")
-            $from_userdetect = "BitChirp.Org";
+            $from_userdetect = "(╥﹏╥)";
         else if ($from_userdetect == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
-            $from_userdetect = "BitChirp(Chan)";
+            $from_userdetect = "(⊙.⊙(☉_☉)⊙.⊙)";
+        else if ($row['username'] != "")
+            $from_userdetect = $row['username'];
         else
             $from_userdetect = substr($from_userdetect,0,15)."...";
   
@@ -217,7 +220,7 @@ $results = mysql_query($query);
         $tweet = htmlentities($tweet,ENT_QUOTES,'UTF-8');
 
          //parse Bitmessage addresses
-        $tweet = preg_replace('/(^|\s)BM-([a-zA-Z0-9]+\w*)/', '\1<a class="parsed_links" target="_blank" href="/bm/?a=\2">BM-(click to show)</a>', $tweet);
+        $tweet = preg_replace('/(^|\s)BM-([a-zA-Z0-9]+\w*)/', '\1<a class="parsed_links" target="_blank" href="/bm/?a=BM-\2">BM-(click to show)</a>', $tweet);
 
         //parse links
         $tweet = preg_replace_callback("#((http|https|ftp)://(\S*?\.\S*?))(\s|\;|\)|\]|\[|\{|\}|,|\"|'|:|\<|$|\.\s)#i",

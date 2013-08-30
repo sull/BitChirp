@@ -44,7 +44,7 @@ mysql_select_db($database) or die( "Unable to select database");
 //RESET
 if ($the_hashtag != "") 
     {
-    $query = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet FROM core_00 WHERE subject LIKE '%".mysql_real_escape_string(substr($the_hashtag,0,50))."%' OR tweet LIKE '%".mysql_real_escape_string(substr($the_hashtag,0,50))."%' OR subject LIKE '%".mysql_real_escape_string(substr($the_hashtag,1,50))."%' OR tweet LIKE '%".mysql_real_escape_string(substr($the_hashtag,1,50))."%'  ORDER BY time DESC";
+    $query = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet, username FROM core_00 LEFT JOIN users ON core_00.from_address = users.address WHERE subject LIKE '%".mysql_real_escape_string(substr($the_hashtag,0,50))."%' OR tweet LIKE '%".mysql_real_escape_string(substr($the_hashtag,0,50))."%' OR subject LIKE '%".mysql_real_escape_string(substr($the_hashtag,1,50))."%' OR tweet LIKE '%".mysql_real_escape_string(substr($the_hashtag,1,50))."%'  ORDER BY time DESC";
     
     //echo "query is".$query;
     //echo '<font size="5"><b>"BitTweet"</b></font><br>';
@@ -148,9 +148,11 @@ if ($the_hashtag != "")
         //From Address
         $from_userdetect = $from;
         if ($from_userdetect == "BM-2D85ZkbLckdMRoh3pknCrvS7av66dtWadF")
-            $from_userdetect = "BitChirp.Org";
+            $from_userdetect = "(╥﹏╥)";
         else if ($from_userdetect == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
-            $from_userdetect = "BitChirp(Chan)";
+            $from_userdetect = "(⊙.⊙(☉_☉)⊙.⊙)";
+        else if ($row['username'] != "")
+            $from_userdetect = $row['username'];
         else
             $from_userdetect = substr($from_userdetect,0,15)."...";
         echo '<a class="from_address" href="https://bitchirp.org/user/?u='.$from.'">'.$from_userdetect.'</a><br>';
@@ -191,7 +193,7 @@ if ($the_hashtag != "")
         $tweet = htmlentities($tweet,ENT_QUOTES,'UTF-8');
 
         //parse Bitmessage addresses
-        $tweet = preg_replace('/(^|\s)BM-([a-zA-Z0-9]+\w*)/', '\1<a class="parsed_links" target="_blank" href="/bm/?a=\2">BM-(click to show)</a>', $tweet);
+        $tweet = preg_replace('/(^|\s)BM-([a-zA-Z0-9]+\w*)/', '\1<a class="parsed_links" target="_blank" href="/bm/?a=BM-\2">BM-(click to show)</a>', $tweet);
 
         //parse links
 
