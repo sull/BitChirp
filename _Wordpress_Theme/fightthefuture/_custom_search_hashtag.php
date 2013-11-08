@@ -18,6 +18,8 @@ get_header();
     <div id="ajax_space">
     <?php 
     $the_search = mysql_real_escape_string(stripslashes($_GET['search']));
+    //Remove hash sign itself
+    $the_search = str_replace("#","",$the_search);
     if ($the_search != "")
       $the_hashtag = "#".$the_search;	
     else

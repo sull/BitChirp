@@ -1,4 +1,6 @@
 <?php
+/* Template Name: Social Page */
+
 //BitChirp.org and FightTheFuture Wordpress Theme with Responsive by "SRMojuze"
 //Licensed under GNU GPL V3
 
@@ -13,18 +15,21 @@ get_header();
       <?php require_once("_includes/_sidebar_00.php"); ?>	
   	</div>
   	<div class="seven columns" style="">
-  	
-  		<table><tr><td><strong><span class="caps_header">Blog</span></strong></td></tr></table>
-  		<?php while ( have_posts() ) : the_post(); ?>
-  			<table><tr>
-  				<td style="color:#333;"> 
-				<span style="font-size:15pt"><?php the_title(); ?></span><br>
-				<?php the_date(); ?><br><br>
-				<div class="page_text"><?php the_content() ?></div>
-				</td>
-			</tr></table>
+
+  		<table><tr>
+  		<td>
+  			<strong><span class="caps_header"><?php the_title(); ?></span></strong>
+		</td>
+		</tr></table>
+
+		<table><tr>
+  		<td>
+  		<?php while ( have_posts() ) : the_post(); ?>  
+			<div class="page_text"><?php the_content() ?></div>
 		<?php endwhile; ?>  
-		<?php //require_once("_includes/_chirp_output_00.php"); ?>
+		</td>
+		</tr></table>		
+
 	</div>
 	<div class="one column">
 	</div>

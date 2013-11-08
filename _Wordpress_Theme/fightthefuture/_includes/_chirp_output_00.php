@@ -56,32 +56,25 @@ $query = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, sub
 $results1 = mysql_query($query);
 //$results2 = mysql_query($query);
 
-
 // Run loop until data exceeds
     
     echo '
+    <!--
     <table><tr>
       <td>
-        <!--<span class="caps_header">WHAT IS BITCHIRP?</span><br>-->
+        span class="caps_header">WHAT IS BITCHIRP?</span><br>
         <span style="color:#222;">BitChirp uses the Bitmessage API and updates this page every 5-10 minutes. Learn more and </span><a href="https://bitmessage.org" target="_blank">Download Bitmessage</a><span style="color:#CCC;">.</span> 
         Page Auto-Refreshes, Last: '.gmdate('h:i:s').' UTC'.'
       </td>
-    </tr></table>
+    </tr></table>-->
 
     <table><tr>
       <td>
         <span style="color:#222;">Currently ad free! If you liked what you have seen, donate any amount to: <br>BTC: 1BLAxN8GcC2RZQvEXhg2Ppi2PSiWnQm82r <br>LTC: LdqrKf4pWnbchxRvwreAzakWEE4DbLS7cf
-        </span>
+        <br>Let’s get social! See <a href="https://bitchirp.org/social">BitChirp.org/social</a></span>
       </td>
     </tr></table>
     
-    <table><tr>
-      <td>
-        <span style="color:#222;font-family: SourceSansProSemiBold,Arial;">BitChirp.org &amp; Bitmsg.To Usernames:</span>
-        <span style="color:#222;">Registration now open! Send a BM from the BM address you want to register to: BM-GtqFCjuk7jgCtwrafg7BmddrYDw1cw7b. Include clearly your 1st, 2nd and 3rd preferences for a username. Do NOT send username requests to the BitChirp chan/old address!</span>
-      </td>
-    </tr></table>
-
     ';
 
     echo '
@@ -173,9 +166,7 @@ $results1 = mysql_query($query);
 
         //From Address
         $from_userdetect = $from;
-        if ($from_userdetect == "BM-2D85ZkbLckdMRoh3pknCrvS7av66dtWadF")
-            $from_userdetect = "(╥﹏╥)";
-        else if ($from_userdetect == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
+        if ($from_userdetect == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
             $from_userdetect = "(⊙.⊙(☉_☉)⊙.⊙)";
         else if ($row['username'] != "")
             $from_userdetect = $row['username'];

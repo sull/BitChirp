@@ -44,7 +44,7 @@ mysql_select_db($database) or die( "Unable to select database");
 //RESET
 if ($the_hashtag != "") 
     {
-    $query = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet, username FROM core_00 LEFT JOIN users ON core_00.from_address = users.address WHERE subject LIKE '%".mysql_real_escape_string(substr($the_hashtag,0,50))."%' OR tweet LIKE '%".mysql_real_escape_string(substr($the_hashtag,0,50))."%' OR subject LIKE '%".mysql_real_escape_string(substr($the_hashtag,1,50))."%' OR tweet LIKE '%".mysql_real_escape_string(substr($the_hashtag,1,50))."%'  ORDER BY time DESC";
+    $query = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet, username FROM core_00 LEFT JOIN users ON core_00.from_address = users.address WHERE subject LIKE '%".mysql_real_escape_string(substr($the_hashtag,0,50))."%' OR tweet LIKE '%".mysql_real_escape_string(substr($the_hashtag,0,50))."%' ORDER BY time DESC";
     
     //echo "query is".$query;
     //echo '<font size="5"><b>"BitTweet"</b></font><br>';
@@ -53,18 +53,20 @@ if ($the_hashtag != "")
 
     // Run loop until data exceeds
     echo '<table><tr>';
-    echo '<td><span style="font-size:17pt;color:#333">(#)'.substr($the_hashtag,1,50).'</span>';
+    echo '<td><span style="font-size:17pt;color:#333">#'.substr($the_hashtag,1,50).'</span>';
     echo '</td>';
     echo '</tr></table>';
     
     echo '
+    <!--
     <table>
     <tr>
     <td>
     Page Auto-Refreshes, Last: '.gmdate('h:i:s').' UTC'.
     '</td>
     </tr>
-    </table>';
+    </table>
+    -->';
 
     while($row = mysql_fetch_assoc($results))
         {
@@ -147,9 +149,7 @@ if ($the_hashtag != "")
 
         //From Address
         $from_userdetect = $from;
-        if ($from_userdetect == "BM-2D85ZkbLckdMRoh3pknCrvS7av66dtWadF")
-            $from_userdetect = "(╥﹏╥)";
-        else if ($from_userdetect == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
+        if ($from_userdetect == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
             $from_userdetect = "(⊙.⊙(☉_☉)⊙.⊙)";
         else if ($row['username'] != "")
             $from_userdetect = $row['username'];

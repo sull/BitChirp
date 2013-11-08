@@ -12,20 +12,20 @@
 </div> 
 
 
-<!--
+
 <div class="show-for-small">
 	<table>
 		<tr>
 		<td>
 			<div style="font-family:SourceSansProRegular,Arial;margin-bottom:0.5em;color:#222;">Selected Chan Pic!
 			</div>
-    		<div style="margin-bottom:1em;color:#222;"><a href="http://beforeitsnews.com/alternative/2013/08/no-war-with-syria-rallies-happening-this-saturday-august-31-worldwide-2749012.html" target="_blank"><img src="https://bitchirp.org/_pics/syria-wr.jpg" width="100%"></a>
+    		<div style="margin-bottom:1em;color:#222;"><a href="http://www.nowtheendbegins.com/blog/?p=15300" target="_blank"><img src="https://bitchirp.org/_pics/truckers-ride-for-the-constitution-shut-down-dc-550.jpg" width="100%"></a>
     		</div>
     	</td>
     	</tr>
     </table>
 </div>
---> 
+ 
 
 
 <div class="hide-for-small" style="padding-left:1em;padding-right:1em;">
@@ -80,7 +80,15 @@
 </div>
 
 <div class="show-for-small">
-	<!--Nothing Here-->
+	<form action="/search-hashtag/" method="get">
+		<table>
+		<tr>
+		<td>
+    		Hashtag Search!
+			<input style="width:100%" type="text" name="search" maxlength="50"/>
+      	</td>
+      	</tr></table>
+	</form>
 </div>
 
 

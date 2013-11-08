@@ -85,12 +85,7 @@ $theusername = mysql_result($results1,0,'username');
 
         $the_user_trimmed = $the_user;
 
-        if ($the_user_trimmed == "BM-2D85ZkbLckdMRoh3pknCrvS7av66dtWadF")
-            {
-            $the_user_trimmed_desktop = '<span style="font-size:17pt;">(╥﹏╥)</span><br>BM-2D85ZkbLckdMRoh3pknCrvS7av66dtWadF';
-            $the_user_trimmed_mobile = '(╥﹏╥)';
-            }
-        else if ($the_user_trimmed == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
+        if ($the_user_trimmed == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
             {
             $the_user_trimmed_desktop = '<span style="font-size:17pt;">(⊙.⊙(☉_☉)⊙.⊙)</span><br>BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi';
             $the_user_trimmed_mobile = '(⊙.⊙(☉_☉)⊙.⊙)';

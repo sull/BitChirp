@@ -10,9 +10,9 @@
         <ul class="right">
           <!--<li><a href="/category/">Blog</a></li>-->
           <li><a href="/">HOME</a></li>
-          <li><a href="/chan">CHAN</a></li>
+          <li><a href="/social">SOCIAL</a></li>
           <li><a href="/faq">FAQ</a></li>
-          <!--<li><a href="/about">ABOUT</a></li>-->
+
           <li><a href="/legal">LEGAL</a></li>
           <li><a href="/category/blog">BLOG</a></li>
         </ul>
@@ -26,7 +26,7 @@
         <ul class="right">
           <!--<li><a href="/category/">Blog</a></li>-->
           <li><a href="/">&nbsp;&nbsp;HOME</a></li>
-          <li><a href="/chan">&nbsp;&nbsp;CHAN</a></li>
+          <li><a href="/social">&nbsp;&nbsp;SOCIAL</a></li>
           <li><a href="/faq">&nbsp;&nbsp;FAQ</a></li>
           <li><a href="/legal">&nbsp;&nbsp;LEGAL</a></li>
           <li><a href="/category/blog">&nbsp;&nbsp;BLOG</a></li>
