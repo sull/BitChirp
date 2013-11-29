@@ -1,6 +1,8 @@
 <?php
 //BitChirp.org and FightTheFuture Wordpress Theme with Responsive by "SRMojuze"
 //Licensed under GNU GPL V3
+//
+header('Content-type: text/html; charset=utf-8');
 ?>
 <!DOCTYPE html>
 
@@ -26,7 +28,7 @@ function alterBrightness($color, $amount)
 
 <!--START: Head Section-->
 <head>
-<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <!--Set the refresh-->
 <META HTTP-EQUIV="REFRESH" CONTENT="600">
@@ -54,6 +56,13 @@ function alterBrightness($color, $amount)
 <!-- Font CSS -->
 <link rel="stylesheet" href="/wp-content/themes/fightthefuture/_fonts/open-sans-fontfacekit/stylesheet.css" type="text/css" charset="utf-8">
 <link rel="stylesheet" href="/wp-content/themes/fightthefuture/_fonts/source-sans-pro-fontfacekit/stylesheet.css" type="text/css" charset="utf-8">
+
+<!-- Inform Browsers about RSS -->
+<link rel="alternate" href="/feedx/" title="BitChirp FeedX" type="application/rss+xml" />
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="/wp-content/themes/fightthefuture/_images/favicon.ico">
+<link rel="icon" href="/wp-content/themes/fightthefuture/_images/favicon.ico">
 
 </head>
 <!--END: Head Section-->

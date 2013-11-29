@@ -3,40 +3,33 @@
 //Licensed under GNU GPL V3
 ?>
 
-
+<!--
 <div class="hide-for-small" style="padding-left:1em;padding-right:1em;">
 	<div style="font-family:SourceSansProRegular,Arial;margin-bottom:0.5em;color:#222;">Selected Chan Pic!
 	</div>
-    <div style="margin-bottom:1em;color:#222;"><a href="http://www.nowtheendbegins.com/blog/?p=15300" target="_blank"><img src="https://bitchirp.org/_pics/truckers-ride-for-the-constitution-shut-down-dc-550.jpg" width="75%"></a>
+    <div style="margin-bottom:1em;color:#222;"><a href="https://bitchirp.org/_pics/i_want_you.jpg" target="_blank"><img src="https://bitchirp.org/_pics/i_want_you.jpg" width="75%"></a>
     </div>
 </div> 
+-->
 
-
-
+<!--
 <div class="show-for-small">
 	<table>
 		<tr>
 		<td>
 			<div style="font-family:SourceSansProRegular,Arial;margin-bottom:0.5em;color:#222;">Selected Chan Pic!
 			</div>
-    		<div style="margin-bottom:1em;color:#222;"><a href="http://www.nowtheendbegins.com/blog/?p=15300" target="_blank"><img src="https://bitchirp.org/_pics/truckers-ride-for-the-constitution-shut-down-dc-550.jpg" width="100%"></a>
+    		<div style="margin-bottom:1em;color:#222;"><a href="/_pics/i_want_you.jpg" target="_blank"><img src="/_pics/i_want_you.jpg" width="100%"></a>
     		</div>
     	</td>
     	</tr>
     </table>
 </div>
- 
+--> 
 
 
 <div class="hide-for-small" style="padding-left:1em;padding-right:1em;">
-
-<!--<table>
-<tr>
-<td>-->
-
-	
-
-	<div style="margin-bottom:0.5em;color:#222;">Suggested Searches
+	<div style="margin-bottom:0.5em;color:#222;">Suggested Searches!
 	</div>
 		
 		<a class="hashtag_link" href="/search-hashtag/?h=%23BitChirp">#BitChirp</a><br>
@@ -74,9 +67,7 @@
 	-->
 
     <!--</td>
-      	</tr></table>-->
-
-
+   	</tr></table>-->
 </div>
 
 <div class="show-for-small">

@@ -22,13 +22,11 @@ get_header();
 		</td>
 		</tr></table>
 
-		<table><tr>
-  		<td>
+	
   		<?php while ( have_posts() ) : the_post(); ?>  
 			<div class="page_text"><?php the_content() ?></div>
 		<?php endwhile; ?>  
-		</td>
-		</tr></table>		
+				
 
 	</div>
 	<div class="one column">
@@ -38,4 +36,4 @@ get_header();
 <?php //require_once("_includes/navigation.php"); ?>
 
 <?php //get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php require_once("footer2.php"); ?>

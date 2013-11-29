@@ -40,10 +40,12 @@ function link_callback($matches)
     }
 
 //INCLUDE CREDENTIALS
-require_once("/home/bitchirp/private/_credentials_00.php");
+require_once("../private/_credentials_00.php");
 
 mysql_connect(localhost,$username,$password);
+//mysql_set_charset('UTF-8');
 mysql_select_db($database) or die( "Unable to select database");
+
 //$thingy = "something";
 
 //echo $_POST["action"];
@@ -71,7 +73,7 @@ $results1 = mysql_query($query);
     <table><tr>
       <td>
         <span style="color:#222;">Currently ad free! If you liked what you have seen, donate any amount to: <br>BTC: 1BLAxN8GcC2RZQvEXhg2Ppi2PSiWnQm82r <br>LTC: LdqrKf4pWnbchxRvwreAzakWEE4DbLS7cf
-        <br>Let’s get social! See <a href="https://bitchirp.org/social">BitChirp.org/social</a></span>
+        <br>Let’s get social! See <a href="/social">http(s)://bitchirp.org/social</a></span>
       </td>
     </tr></table>
     
@@ -173,12 +175,12 @@ $results1 = mysql_query($query);
         else
             $from_userdetect = substr($from_userdetect,0,15)."...";
   
-        echo '<a class="from_address" href="https://bitchirp.org/user/?u='.$from.'">'.$from_userdetect.'</a><br>';
+        echo '<a class="from_address" href="/user/?u='.$from.'">'.$from_userdetect.'</a><br>';
 
 
         //Output Subject
         $subject = $row['subject'];
-        //$subject = base64_decode($subject);
+        //$subject = utf8_decode($subject);
 
         $subject = strip_tags($subject);
         $subject = htmlentities($subject,ENT_QUOTES,'UTF-8');
@@ -193,10 +195,10 @@ $results1 = mysql_query($query);
         
         //Output Tweet
         $tweet = $row['tweet'];
-        //$tweet = base64_decode($tweet);
+        //$tweet = utf8_decode($tweet);
         $tweet = strip_tags($tweet);
 
-         $tweet = str_replace("------------------------------------------------------", "~~~~~", $tweet);
+        $tweet = str_replace("------------------------------------------------------", "~~~~~", $tweet);
 
         if (strlen($tweet) > 400)       
             {

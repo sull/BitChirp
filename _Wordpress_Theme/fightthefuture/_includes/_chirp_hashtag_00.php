@@ -34,7 +34,7 @@ function link_callback($matches)
     }
 
 //INCLUDE CREDENTIALS
-require_once("/home/bitchirp/private/_credentials_00.php");
+require_once("../private/_credentials_00.php");
 
 mysql_connect(localhost,$username,$password);
 mysql_select_db($database) or die( "Unable to select database");
@@ -155,7 +155,7 @@ if ($the_hashtag != "")
             $from_userdetect = $row['username'];
         else
             $from_userdetect = substr($from_userdetect,0,15)."...";
-        echo '<a class="from_address" href="https://bitchirp.org/user/?u='.$from.'">'.$from_userdetect.'</a><br>';
+        echo '<a class="from_address" href="/user/?u='.$from.'">'.$from_userdetect.'</a><br>';
 
 
         //Output Subject

@@ -14,7 +14,7 @@ function link_callback($matches)
 
 
 //INCLUDE CREDENTIALS
-require_once("/home/bitchirp/private/_credentials_00.php");
+require_once("../private/_credentials_00.php");
 
 
 mysql_connect(localhost,$username,$password);

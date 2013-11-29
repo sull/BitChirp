@@ -28,7 +28,7 @@ $the_user = substr(mysql_real_escape_string(stripslashes($_GET['u'])),0,100);
 </div>
 
 <?php //get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php require_once("footer2.php"); ?>
 
 <!--Refresh the page (TEST AJAX)-->
 
