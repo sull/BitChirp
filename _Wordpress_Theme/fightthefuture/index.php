@@ -16,8 +16,8 @@ get_header();
   		<table><tr>
   		<td>
   		  <div style="font-size:14pt;color:#222;margin-bottom:0.2em;" class="caps_header">&ldquo;CHIRP&rdquo; your Bitmessage to:</div>
-        <div style="margin-bottom:0.25em;color:#222;font-size:10pt;font-family: SourceSansProSemiBold,Arial;">&nbsp;&nbsp;BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi&nbsp;&nbsp;<a href="/chan" class="tiny button round">CHAN</a></div>
-      	<div style="color:#555;font-size:10pt;font-family: SourceSansProRegular,Arial;">&nbsp;&nbsp;BM-2D8J9EHNhqnghxmtrXwSZecCJQGfaL7EdT&nbsp;&nbsp;&nbsp;<a href="/chan" class="tiny button secondary round disabled">OLD</a></div>
+        <div style="margin-bottom:0.25em;color:#222;font-size:10pt;">&nbsp;&nbsp;BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi&nbsp;&nbsp;&nbsp;<a href="/chan" class="tiny button round">CHAN</a></div>
+      	<div style="color:#555;font-size:10pt;">&nbsp;&nbsp;BM-2D8J9EHNhqnghxmtrXwSZecCJQGfaL7EdT&nbsp;&nbsp;<a href="/chan" class="tiny button secondary round disabled">OLD</a></div>
         <!--<br><span style="color:#222">Use the new address for "Chan" Support!</span>-->
       </td>
     	</tr></table>

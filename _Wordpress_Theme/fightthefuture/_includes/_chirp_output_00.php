@@ -72,8 +72,8 @@ $results1 = mysql_query($query);
 
     <table><tr>
       <td>
-        <span style="color:#222;">Currently ad free! If you liked what you have seen, donate any amount to: <br>BTC: 1BLAxN8GcC2RZQvEXhg2Ppi2PSiWnQm82r <br>LTC: LdqrKf4pWnbchxRvwreAzakWEE4DbLS7cf
-        <br>Let’s get social! See <a href="/social">http(s)://bitchirp.org/social</a></span>
+        <span class="tweet" style="color:#222;">Currently ad free! If you liked what you have seen, donate any amount to: <br>BTC: 1BLAxN8GcC2RZQvEXhg2Ppi2PSiWnQm82r <br>LTC: LdqrKf4pWnbchxRvwreAzakWEE4DbLS7cf
+        </span>
       </td>
     </tr></table>
     

@@ -25,7 +25,7 @@ mysql_select_db($database) or die( "Unable to select database");
 //RESET
 
 $query1 = "SELECT username from users where address = '".$the_user."'";
-$query2 = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet, username FROM core_00 LEFT JOIN users ON core_00.from_address = users.address WHERE from_address = '".$the_user."' ORDER BY time DESC";
+$query2 = "SELECT id, UNIX_TIMESTAMP(time) as time, from_address, to_address, subject, tweet, username FROM core_00 LEFT JOIN users ON core_00.from_address = users.address WHERE from_address = '".$the_user."' ORDER BY time DESC LIMIT 0,150";
 
 //echo "query is".$query;
 
@@ -87,12 +87,12 @@ $theusername = mysql_result($results1,0,'username');
 
         if ($the_user_trimmed == "BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi")
             {
-            $the_user_trimmed_desktop = '<span style="font-size:17pt;">(⊙.⊙(☉_☉)⊙.⊙)</span><br>BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi';
+            $the_user_trimmed_desktop = '<span class="from_address">(⊙.⊙(☉_☉)⊙.⊙)</span><br>BM-2D7yBNF87Msi8M3hZr3eop6Fd1ENPAzPoi';
             $the_user_trimmed_mobile = '(⊙.⊙(☉_☉)⊙.⊙)';
             }
         else if ($theusername != "")
             {
-            $the_user_trimmed_desktop = '<span style="font-size:17pt;">'.$theusername.'</span><br>'.$the_user_trimmed;
+            $the_user_trimmed_desktop = '<span class="from_address">'.$theusername.'</span><br>'.$the_user_trimmed;
             $the_user_trimmed_mobile = $theusername;
             }
         else
@@ -107,14 +107,14 @@ $theusername = mysql_result($results1,0,'username');
 
         //Desktop
         echo '<td class="hide-for-small" style="">
-        <div style="letter-spacing:-0.02em;color:#F2B91D;font-family: SourceSansProSemibold,Arial;font-size:13pt;margin-top:0.5em;">'.$the_user_trimmed_desktop.'
+        <div style="letter-spacing:-0.02em;color:#F2B91D;font-size:13pt;margin-top:0.5em;">'.$the_user_trimmed_desktop.'
         </div></td>';
         //<span style="font-size:11pt;color:white;">BitChirper since...(coming soon)</span>
 
         //Mobile
        echo '<td class="show-for-small" style="">
-       <div style="letter-spacing:-0.02em;color:#F2B91D;font-family: SourceSansProSemibold,Arial;font-size:15pt;margin-top:0.25em;">'.$the_user_trimmed_mobile.'
-       </div><div style="letter-spacing:-0.02em;color:#555;font-family: SourceSansProSemibold,Arial;font-size:8pt;margin-top:0em;">'.$the_user_trimmed.'</div><!--<div style="margin-top:0.5em;font-size:11pt;color:white;">BitChirper since...(coming soon)</div>--></td>';
+       <div style="letter-spacing:-0.02em;color:#F2B91D;font-size:15pt;margin-top:0.25em;">'.$the_user_trimmed_mobile.'
+       </div><div style="letter-spacing:-0.02em;color:#555;font-size:8pt;margin-top:0em;">'.$the_user_trimmed.'</div><!--<div style="margin-top:0.5em;font-size:11pt;color:white;">BitChirper since...(coming soon)</div>--></td>';
         //echo '<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:11pt;">BitChirper since...(coming soon)</span>';
         //echo '<div style="margin-top:0em;margin-bottom:0.5em;">BitChirper since...(coming soon)</div>';
 
@@ -125,14 +125,14 @@ $theusername = mysql_result($results1,0,'username');
 
 
 
-    echo '
-    <table>
-    <tr>
-    <td>
-    Page Auto-Refreshes, Last: '.gmdate('h:i:s').' UTC'.
-    '</td>
-    </tr>
-    </table>';
+    //echo '
+    //<table>
+    //<tr>
+    //<td>
+    //Page Auto-Refreshes, Last: '.gmdate('h:i:s').' UTC'.
+    //'</td>
+    //</tr>
+    //</table>';
 
     while($row = mysql_fetch_assoc($results2))
 

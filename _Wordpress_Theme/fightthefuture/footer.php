@@ -18,8 +18,8 @@
 			<a style="font-size:10pt;" href="https://bitmessage.org/forum/index.php/topic,1670.0.html" target="_blank">Discuss BitChirp</a>
 			<a style="font-size:10pt;" href="http://www.flickr.com/photos/9516941@N08/" target="_blank">Logo: Asbestos Bill</a>
 			<a style="font-size:10pt;" href="http://www.patterncooler.com" target="_blank">BG: Patterncooler.com</a>
-			<a style="font-size:10pt;" href="http://facebook.com/mojucloud" target="_blank">By MojuCloud</a>
-			<a style="font-size:10pt;" href="https://creativecommons.org/licenses/by-nc/3.0/deed.en_US" target="_blank">This website (C)2013 MobileJuze Pty Ltd, License: Creative Commons: NC-Attrib</a>
+			<a style="font-size:10pt;" href="https://facebook.com/mojucloud" target="_blank">Hosting: MojuCloud</a>
+			<a style="font-size:10pt;" href="http://gplv3.fsf.org" target="_blank">This website is licensed as GNU GPL V3.</a>
 		</td>
 		</tr></table>
 	</div> 

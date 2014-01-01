@@ -16,7 +16,7 @@
 
 .parsed_links
 {
-font-size:10pt;
+font-size:11pt;
 color:#6B6B6B;
 }
 
@@ -24,12 +24,12 @@ color:#6B6B6B;
 {
 margin-top:0em;
 margin-bottom:-1.5em;
-font-size:10pt;
+font-size:11pt;
 color:#777;
 }
 .page_text p
 {
-font-size:10pt;
+font-size:11pt;
 }
 
 .top-bar
@@ -52,9 +52,9 @@ margin-bottom:1.5em;
 
 .top-bar ul > li a:not(.button) 
 { 
-font-family: "SourceSansProRegular", Arial;
+font-family: "dosismedium", Arial;
 letter-spacing: -75%;	
-font-size:11pt;
+font-size:12pt;
 color: black;
 display: block; 
 height: 45px; 
@@ -64,9 +64,9 @@ padding: 0 15px;
 
 .top-bar-mobile ul > li a:not(.button) 
 { 
-font-family: "SourceSansProRegular", Arial;
+font-family: "dosismedium", Arial;
 letter-spacing: -75%;	
-font-size:11pt;
+font-size:12pt;
 color: white;
 display: block; 
 height: 45px; 
@@ -76,7 +76,7 @@ padding: 0 15px;
 
 .tweet
 {
-font-size:10pt;
+font-size:11pt;
 color:#333;
 word-wrap: break-word;
 }
@@ -114,7 +114,7 @@ background: #EEE;
 
 .proper_semibold
 {
-font-family: "SourceSansProSemibold", Arial;
+font-family: "dosissemibold", Arial;
 letter-spacing: -75%;	
 line-height:1.3em;
 font-size:11pt;
@@ -122,25 +122,25 @@ font-size:11pt;
 
 .proper_strong, strong
 {
-font-family: "SourceSansProSemibold", Arial;
+font-family: "dosissemibold", Arial;
 letter-spacing: -75%;	
 line-height:1.3em;
-font-size:10pt;
+font-size:11pt;
 font-weight:500;
 }
 
 .sidebar_address
 {
-font-family: "SourceSansProRegular", Arial;
+font-family: "dosismedium", Arial;
 letter-spacing: -75%;	
 line-height:1.3em;
 font-size:11pt;
 
 }
 
-.sidebar_thingy
+.sidebar_thingy, .sidebar_thingy a
 {
-font-family: "SourceSansProLight", Arial;
+font-family: "dosismedium", Arial;
 letter-spacing: -75%;	
 font-size:11pt;
 
@@ -149,19 +149,22 @@ font-size:11pt;
 
 .from_address
 {
-font-family: "SourceSansProRegular", Arial;
-font-size:13pt;
+font-family: "dosismedium", Arial;
+font-size:14pt;
 color:#F2B91D;	
 }
 
 .subject_text
 {
+font-family: "dosismedium", Arial;
+font-size:11pt;
+color:#111;
 }
 
 .caps_header
 {
-font-family: "SourceSansProSemibold", Arial;
-font-size:13pt;
+font-family: "dosissemibold", Arial;
+font-size:14pt;
 letter-spacing: -75%;
 text-transform: uppercase;
 color:#222;
@@ -170,15 +173,15 @@ color:#222;
 /*Mark ANON CHANGE 00*/
 h1, h2, h3, h4, h5, h6
 {
-font-family: "SourceSansProRegular", Arial;
-font-size:12pt;
+font-family: "dosismedium", Arial;
+font-size:14pt;
 letter-spacing: -0.02em;	
 line-height:1.3em;
 color:#222;
 }
 p, a, div 
 {
-font-family: "SourceSansProRegular", Arial;
+font-family: "dosismedium", Arial;
 font-size:11pt;
 letter-spacing: -0.02em;	
 line-height:1.3em;
@@ -192,7 +195,7 @@ font-weight:normal;
 
 a
 {
-font-size:10pt;
+font-size:11pt;
 color:#0F155C;
 }
 a:hover

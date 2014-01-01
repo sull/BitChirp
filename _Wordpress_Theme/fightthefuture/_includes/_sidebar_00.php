@@ -29,27 +29,30 @@
 --> 
 
 
-<div class="hide-for-small" style="padding-left:1em;padding-right:1em;">
+<div class="hide-for-small sidebar_thingy" style="padding-left:1em;padding-right:1em;">
 
 <!--<table>
 <tr>
 <td>-->
 
-	
+	<div style="margin-bottom:0.25em;color:#222;">My New Project!
+	</div>
+	<a class="hashtag_link" href="/search-hashtag/?h=%23Mojucoin">#Mojucoin</a><br>
+	<br>
 
 	<div style="margin-bottom:0.5em;color:#222;">Suggested Searches!
 	</div>
 		
-		<a class="hashtag_link" href="/search-hashtag/?h=%23BitChirp">#BitChirp</a><br>
-		<a class="hashtag_link" href="/search-hashtag/?h=%23Bitmessage">#Bitmessage</a><br>
-		<a class="hashtag_link" href="/search-hashtag/?h=%23FuckTheBanks">#FuckTheBanks</a><br>
-		<a class="hashtag_link" href="/search-hashtag/?h=%23Fukushima">#Fukushima</a><br>
-    	<!--<a href="/search-hashtag/?h=%23Egypt">#Egypt</a><br>-->
-		<!--<a href="/search-hashtag/?h=%23Fontas">#Fontas</a><br>-->
-		<a class="hashtag_link" href="/search-hashtag/?h=%23NSA">#NSA</a><br>
-		<a class="hashtag_link" href="/search-hashtag/?h=%23Obamacare">#Obamacare</a><br>
-		<a class="hashtag_link" href="/search-hashtag/?h=%23Syria">#Syria</a><br>
-    	<!--<a href="/search-hashtag/?h=%23TorOrVPN">#TorOrVPN</a><br>-->
+	<a class="hashtag_link" href="/search-hashtag/?h=%23BitChirp">#BitChirp</a><br>
+	<a class="hashtag_link" href="/search-hashtag/?h=%23Bitmessage">#Bitmessage</a><br>
+	<a class="hashtag_link" href="/search-hashtag/?h=%23FuckTheBanks">#FuckTheBanks</a><br>
+	<a class="hashtag_link" href="/search-hashtag/?h=%23Fukushima">#Fukushima</a><br>
+    <!--<a href="/search-hashtag/?h=%23Egypt">#Egypt</a><br>-->
+	<!--<a href="/search-hashtag/?h=%23Fontas">#Fontas</a><br>-->
+	<a class="hashtag_link" href="/search-hashtag/?h=%23NSA">#NSA</a><br>
+	<a class="hashtag_link" href="/search-hashtag/?h=%23Obamacare">#Obamacare</a><br>
+	<a class="hashtag_link" href="/search-hashtag/?h=%23Syria">#Syria</a><br>
+    <!--<a href="/search-hashtag/?h=%23TorOrVPN">#TorOrVPN</a><br>-->
 
 	<br>
 	<div style="margin-bottom:0.5em;color:#222;">Hashtag Search!

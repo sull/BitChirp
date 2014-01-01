@@ -36,7 +36,7 @@ function alterBrightness($color, $amount)
 <!-- Set the viewport width to device width for mobile -->
 <meta name="viewport" content="width=device-width" />
 
-<title>BitChirp // Secure, Anonymous Social Media Based On BitMessage</title>
+<title>BitChirp – Secure, Anonymous Social Media Based On BitMessage</title>
 
 <!-- Included CSS Files (Uncompressed) -->
 <link rel="stylesheet" href="/wp-content/themes/fightthefuture/_foundation_css/foundation.css">
@@ -54,8 +54,9 @@ function alterBrightness($color, $amount)
 -->
 
 <!-- Font CSS -->
-<link rel="stylesheet" href="/wp-content/themes/fightthefuture/_fonts/open-sans-fontfacekit/stylesheet.css" type="text/css" charset="utf-8">
-<link rel="stylesheet" href="/wp-content/themes/fightthefuture/_fonts/source-sans-pro-fontfacekit/stylesheet.css" type="text/css" charset="utf-8">
+<!--<link rel="stylesheet" href="/wp-content/themes/fightthefuture/_fonts/open-sans-fontfacekit/stylesheet.css" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="/wp-content/themes/fightthefuture/_fonts/source-sans-pro-fontfacekit/stylesheet.css" type="text/css" charset="utf-8">-->
+<link rel="stylesheet" href="/wp-content/themes/fightthefuture/_fonts/dosis-fontfacekit/stylesheet.css" type="text/css" charset="utf-8">
 
 <!-- Inform Browsers about RSS -->
 <link rel="alternate" href="/feedx/" title="BitChirp FeedX" type="application/rss+xml" />
