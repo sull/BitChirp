@@ -61,21 +61,22 @@ $results1 = mysql_query($query);
 // Run loop until data exceeds
     
     echo '
-    <!--
-    <table><tr>
-      <td>
-        span class="caps_header">WHAT IS BITCHIRP?</span><br>
-        <span style="color:#222;">BitChirp uses the Bitmessage API and updates this page every 5-10 minutes. Learn more and </span><a href="https://bitmessage.org" target="_blank">Download Bitmessage</a><span style="color:#CCC;">.</span> 
-        Page Auto-Refreshes, Last: '.gmdate('h:i:s').' UTC'.'
-      </td>
-    </tr></table>-->
-
+    
     <table><tr>
       <td>
         <span class="tweet" style="color:#222;">Currently ad free! If you liked what you have seen, donate any amount to: <br>BTC: 1BLAxN8GcC2RZQvEXhg2Ppi2PSiWnQm82r <br>LTC: LdqrKf4pWnbchxRvwreAzakWEE4DbLS7cf
+        <br>XPM: AT6Abnf2cAFJ42zHAMvsX28bamB5nzNDT4</span>
+      </td>
+    </tr></table>
+
+    <!--
+    <table><tr>
+      <td>
+        <span class="tweet" style="color:#222;">NOTE: BitChirp.org is currently not updating Chirps until around Jan 20 2014. This is to attempt to resolve the duplicate Chirps issue.
         </span>
       </td>
     </tr></table>
+    -->
     
     ';
 

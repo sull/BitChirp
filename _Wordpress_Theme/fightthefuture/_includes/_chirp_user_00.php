@@ -118,22 +118,9 @@ $theusername = mysql_result($results1,0,'username');
         //echo '<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:11pt;">BitChirper since...(coming soon)</span>';
         //echo '<div style="margin-top:0em;margin-bottom:0.5em;">BitChirper since...(coming soon)</div>';
 
+        //Close first table
+        echo '</tr></table>';
         
-    //echo '<div style="float:clear;"><br><br></div>';
-
-    // Run loop until data exceeds
-
-
-
-    //echo '
-    //<table>
-    //<tr>
-    //<td>
-    //Page Auto-Refreshes, Last: '.gmdate('h:i:s').' UTC'.
-    //'</td>
-    //</tr>
-    //</table>';
-
     while($row = mysql_fetch_assoc($results2))
 
     {
